@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\MahasiswaModel;
+use App\Models\Mahasiswa;
 
 class MahasiswaController extends Controller
 {
     public function tampilmahasiswa()
     {
-        $mahasiswa = MahasiswaModel::select('*')
+        $mahasiswa = Mahasiswa::select('*')
             ->get();
 
         return view('tampilmahasiswa',['mahasiswa'=>$mahasiswa]);
@@ -22,7 +22,7 @@ class MahasiswaController extends Controller
 
     public function simpanmahasiswa(Request $request)
     {
-        $santri = MahasiswaModel::create([
+        $santri = Mahasiswa::create([
             'nm_mahasiswa' => $request->nm_mahasiswa,
             'tmp_lahir' => $request->tmp_lahir,
             'tgl_lahir' => $request->tgl_lahir,
@@ -35,7 +35,7 @@ class MahasiswaController extends Controller
 
     public function ubahmahasiswa($id_mahasiswa)
     {
-        $mahasiswa = MahasiswaModel::select('*')
+        $mahasiswa = Mahasiswa::select('*')
         ->where('id_mahasiswa', $id_mahasiswa)
         ->get();
 
@@ -44,7 +44,7 @@ class MahasiswaController extends Controller
 
     public function updatemahasiswa(Request $request)
     {
-        $mahasiswa = MahasiswaModel::where('id_mahasiswa', 
+        $mahasiswa = Mahasiswa::where('id_mahasiswa',
         $request->id_mahasiswa)
         ->update([
         'nm_mahasiswa' => $request->nm_mahasiswa,
@@ -59,7 +59,7 @@ class MahasiswaController extends Controller
 
     public function hapusmahasiswa($id_mahasiswa)
     {
-        $mahasiswa = MahasiswaModel::where('id_mahasiswa', 
+        $mahasiswa = Mahasiswa::where('id_mahasiswa',
         $id_mahasiswa)->delete();
 
         return redirect()->route('tampilmahasiswa');
