@@ -1,4 +1,4 @@
-# Kanban Crayon Board 🎨
+# taraTask Kanban Crayon Board 🎨
 
 <div align="center">
 
