@@ -4,7 +4,7 @@
 
 ---
 
-## 📚 Table of Contents
+##  Table of Contents
 
 1. [Getting Started](#getting-started)
 2. [Creating Your First Board](#creating-your-first-board)
@@ -18,7 +18,7 @@
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Creating an Account
 
@@ -62,7 +62,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│ [🎨 Logo] [Board Title]        [Search] [🌙] [👤]  │ Header
+│ [ Logo] [Board Title]        [Search] [🌙] []  │ Header
 ├──────────┬──────────────────────────────────────────┤
 │          │                                          │
 │ SIDEBAR  │         KANBAN BOARD                     │
@@ -79,7 +79,7 @@
 
 ---
 
-## 📋 Creating Your First Board
+##  Creating Your First Board
 
 ### Why Use Multiple Boards?
 
@@ -101,9 +101,9 @@ Think of boards as separate workspaces:
 **Method 2: Quick Tips**
 
 ```
-✅ Use descriptive names: "Q1 2025 Product Launch"
-✅ Keep it short: Fits in sidebar nicely
-❌ Avoid: "Board 1", "Test", "Untitled"
+ Use descriptive names: "Q1 2025 Product Launch"
+ Keep it short: Fits in sidebar nicely
+ Avoid: "Board 1", "Test", "Untitled"
 ```
 
 ### Customizing Board Appearance
@@ -132,7 +132,7 @@ Currently, colors are auto-assigned. In the future UI:
 
 ---
 
-## ✅ Managing Tasks
+##  Managing Tasks
 
 ### Creating Tasks
 
@@ -181,7 +181,7 @@ Status: To Do
 1. **Click anywhere** on task card (except title)
 2. Task modal opens with 3 tabs:
 
-**📝 Details Tab:**
+** Details Tab:**
 - Edit title, description, priority
 - Change due date
 - Add/remove tags
@@ -191,7 +191,7 @@ Status: To Do
 - Add new comments
 - Delete your comments
 
-**📊 Activity Tab:**
+** Activity Tab:**
 - See complete change history
 - Who changed what and when
 - Audit trail for accountability
@@ -208,7 +208,7 @@ Status: To Do
 ```
 To Do → In Progress:  started_at timestamp set
 In Progress → In Review:  No special behavior
-In Review → Done:  completed_at set + 🎉 confetti!
+In Review → Done:  completed_at set +  confetti!
 ```
 
 #### Moving Backwards
@@ -258,7 +258,7 @@ You can drag tasks back to previous columns:
 
 ### Deleting Tasks
 
-**⚠️ Warning:** Deletion is permanent!
+** Warning:** Deletion is permanent!
 
 1. Open task modal
 2. Click "**Delete Task**" button
@@ -424,8 +424,8 @@ Task Card:
 
 **Example Activity Log:**
 ```
-🎯 You created this task - 2 days ago
-📝 You updated description - 2 days ago
+ You created this task - 2 days ago
+ You updated description - 2 days ago
 ➡️  You moved from "To Do" to "In Progress" - 1 day ago
 💬 You added a comment - 1 day ago
 🏷️  Sarah added tag "Frontend" - 5 hours ago
@@ -459,7 +459,7 @@ Total: 10 tasks, 4 done = 40% complete
 
 ### Analytics Dashboard
 
-**Access:** Click "📊 Analytics" button in header
+**Access:** Click " Analytics" button in header
 
 **Four Key Metrics:**
 
@@ -469,9 +469,9 @@ Total: 10 tasks, 4 done = 40% complete
 Average days from starting to completing a task
 
 **Good Values:**
-- **< 2 days**: Fast-moving team 🚀
-- **2-5 days**: Healthy pace ✅
-- **> 7 days**: Possible bottlenecks ⚠️
+- **< 2 days**: Fast-moving team 
+- **2-5 days**: Healthy pace 
+- **> 7 days**: Possible bottlenecks 
 
 **Use It To:**
 - Set realistic deadlines
@@ -518,7 +518,7 @@ Tasks currently in "In Progress" or "In Review"
 Total tasks marked "Done" (all time)
 
 **Use It To:**
-- Celebrate milestones (100 tasks! 🎉)
+- Celebrate milestones (100 tasks! )
 - Track long-term progress
 - Motivation booster
 
@@ -617,7 +617,7 @@ In Progress (6/5) ← Over limit (pulses red)
 
 #### Delete Account
 
-**⚠️ DANGER ZONE**
+** DANGER ZONE**
 
 1. Go to "Delete Account" section
 2. Read warning carefully
@@ -656,11 +656,11 @@ Each board gets unique random color
 
 ---
 
-## 💡 Tips & Best Practices
+##  Tips & Best Practices
 
 ###  Writing Good Task Titles
 
-**✅ Good Examples:**
+** Good Examples:**
 ```
 "Implement user login with OAuth"
 "Fix: Dashboard loading spinner stuck"
@@ -668,7 +668,7 @@ Each board gets unique random color
 "Deploy v1.2 to production"
 ```
 
-**❌ Bad Examples:**
+** Bad Examples:**
 ```
 "Fix bug" ← Too vague
 "Update stuff" ← What stuff?
@@ -785,27 +785,27 @@ WIP Limit: 6 tasks (3 people × 2 tasks each)
 
 **Comment Guidelines:**
 
-✅ **Be Specific:**
+ **Be Specific:**
 ```
 "The login button should be blue (#3B82F6) not green"
 ```
 
-❌ **Not Vague:**
+ **Not Vague:**
 ```
 "Change the button color"
 ```
 
-✅ **Be Constructive:**
+ **Be Constructive:**
 ```
 "Great progress! Minor suggestion: reduce spacing by 8px"
 ```
 
-❌ **Not Negative:**
+ **Not Negative:**
 ```
 "This looks terrible"
 ```
 
-✅ **Ask Questions:**
+ **Ask Questions:**
 ```
 "Should this API support pagination?"
 ```
@@ -817,7 +817,7 @@ WIP Limit: 6 tasks (3 people × 2 tasks each)
 
 ---
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -909,7 +909,7 @@ OS: Windows 11
 Account: john@example.com
 Steps to Reproduce:
 1. Click "New Task"
-2. Enter title with emoji 🚀
+2. Enter title with emoji 
 3. Click "Create"
 Expected: Task created
 Actual: Error message appears
@@ -974,7 +974,7 @@ When task moved to "Done"
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 **Documentation:**
 - [Features Guide](./FEATURES.md) - Technical feature details
@@ -989,7 +989,7 @@ When task moved to "Done"
 
 ---
 
-## 🎉 You're Ready!
+##  You're Ready!
 
 You now know everything needed to master Kanban Crayon Board!
 
@@ -1004,7 +1004,7 @@ You now know everything needed to master Kanban Crayon Board!
 - [ ] Upload profile avatar
 - [ ] Enable dark mode
 
-**Happy Tasking! 🚀**
+**Happy Tasking! **
 
 ---
 

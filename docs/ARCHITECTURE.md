@@ -78,15 +78,15 @@ This application uses a **Modern Monolith** approach:
 - **Easier development** (no CORS, shared auth)
 
 **Benefits:**
-- ✅ Fast development
-- ✅ Easy to reason about
-- ✅ Simpler deployment
-- ✅ No API versioning complexity
+-  Fast development
+-  Easy to reason about
+-  Simpler deployment
+-  No API versioning complexity
 
 **Trade-offs:**
-- ⚠️ Not ideal for mobile apps (would need API layer)
-- ⚠️ Tight coupling between frontend/backend
-- ⚠️ Less flexibility for separate teams
+-  Not ideal for mobile apps (would need API layer)
+-  Tight coupling between frontend/backend
+-  Less flexibility for separate teams
 
 ---
 
@@ -232,7 +232,7 @@ export default {
 
 ---
 
-## 🎨 System Design Patterns
+##  System Design Patterns
 
 ### 1. MVC Pattern (Backend)
 
@@ -447,7 +447,7 @@ User clicks board in sidebar
         │
         └─> Inertia.js swaps props
               └─> React re-renders with new data
-                    └─> No full page reload! ✨
+                    └─> No full page reload! 
 ```
 
 #### 3. Form Submission
@@ -494,7 +494,7 @@ User A creates task
 
 ---
 
-## 🔒 Security Architecture
+##  Security Architecture
 
 ### Authentication
 
@@ -567,8 +567,8 @@ $validated = $request->validate([
 ]);
 
 // SQL Injection Protected (Eloquent uses prepared statements):
-Task::where('status', $userInput)->get();  // ✅ Safe
-DB::raw("SELECT * WHERE status = $userInput");  // ❌ NEVER DO THIS
+Task::where('status', $userInput)->get();  //  Safe
+DB::raw("SELECT * WHERE status = $userInput");  //  NEVER DO THIS
 ```
 
 ### XSS Prevention
@@ -612,13 +612,13 @@ Rules\Password::defaults()
 **Eager Loading (N+1 Prevention):**
 
 ```php
-// ❌ Bad: N+1 queries
+//  Bad: N+1 queries
 $tasks = Task::all();
 foreach ($tasks as $task) {
     echo $task->board->title;  // +1 query per task
 }
 
-// ✅ Good: 2 queries total
+//  Good: 2 queries total
 $tasks = Task::with('board')->get();
 foreach ($tasks as $task) {
     echo $task->board->title;  // No extra queries
@@ -837,7 +837,7 @@ export default async function(req) {
 
 ---
 
-## 📊 Performance Metrics
+##  Performance Metrics
 
 ### Current Performance
 

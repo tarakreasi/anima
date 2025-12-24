@@ -18,7 +18,7 @@
 
 ---
 
-## 🎯 Core Kanban Features
+##  Core Kanban Features
 
 ### 4-Column Workflow
 
@@ -59,7 +59,7 @@ The Kanban board implements a classic 4-stage workflow optimized for modern soft
 - **Color**: Green tint
 - **Automatic Features**:
   - `completed_at` timestamp set automatically
-  - Confetti celebration animation 🎉
+  - Confetti celebration animation 
   - Counted in completion metrics
 - **Analytics Impact**:
   - Affects cycle time calculation
@@ -87,7 +87,7 @@ The Kanban board implements a classic 4-stage workflow optimized for modern soft
 
 ---
 
-## 📋 Task Management
+##  Task Management
 
 ### Task Properties
 
@@ -236,7 +236,7 @@ Activity Types:
 
 ---
 
-## 🎨 Multi-Board System
+##  Multi-Board System
 
 ### Board Concept
 
@@ -516,7 +516,7 @@ Content-Type: application/json
 1. **Code Review:**
    ```
    "@john Please review the authentication changes"
-   "Looks good! Approved ✅"
+   "Looks good! Approved "
    ```
 
 2. **Status Updates:**
@@ -542,13 +542,13 @@ Content-Type: application/json
 - [ ] Edit comments
 - [ ] @mentions with notifications
 - [ ] Markdown support (bold, italic, links, code)
-- [ ] Emoji reactions (👍, ❤️, etc.)
+- [ ] Emoji reactions (, ❤️, etc.)
 - [ ] File attachments
 - [ ] Comment threading (replies)
 
 ---
 
-## 📊 Analytics & Metrics
+##  Analytics & Metrics
 
 ### Analytics Dashboard
 
@@ -669,10 +669,10 @@ Response:
 **Visual Design:**
 - Glassmorphism card style
 - Color-coded metrics:
-  - Cycle Time: Blue 📊
-  - Throughput: Green 🚀
+  - Cycle Time: Blue 
+  - Throughput: Green 
   - WIP: Amber ⚙️
-  - Completed: Purple ✅
+  - Completed: Purple 
 
 ### Limitations & Future Enhancements
 
@@ -692,7 +692,7 @@ Response:
 
 ---
 
-## 👤 User Management
+##  User Management
 
 ### Authentication System
 
@@ -807,7 +807,7 @@ Built on **Laravel Breeze** with React/Inertia.js stack.
 
 ---
 
-## 🎨 UI/UX Features
+##  UI/UX Features
 
 ### Glassmorphism Design
 

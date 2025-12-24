@@ -423,7 +423,7 @@ php artisan migrate:fresh --seed
 
 ---
 
-## 🔧 Backend Development
+##  Backend Development
 
 ### Controllers
 
@@ -959,7 +959,7 @@ $task = Task::factory()
 
 ---
 
-## 🚀 Deployment
+##  Deployment
 
 ### Production Build
 
@@ -1185,7 +1185,7 @@ Attach screenshots of UI changes.
 
 ---
 
-## 📚 Additional Resources
+##  Additional Resources
 
 **Laravel:**
 - [Laravel Documentation](https://laravel.com/docs)
