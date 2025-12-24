@@ -31,6 +31,19 @@ This is not just a task manager—it's a showcase of what happens when design th
 
 ---
 
+## 📸 Screenshots
+
+### Dashboard - Overview & Analytics
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Kanban Board - Task Management
+![Kanban Board](docs/screenshots/kanban.png)
+
+### My Tasks - Unified View
+![My Tasks](docs/screenshots/my-tasks.png)
+
+---
+
 ## ✨ Key Features
 
 ### 🎨 **Multi-Board System**
