@@ -7,62 +7,63 @@ use App\Models\MahasiswaModel;
 
 class MahasiswaController extends Controller
 {
-    public function tampilmahasiswa()
+    public function index()
     {
-        $mahasiswa = MahasiswaModel::select('*')
-            ->get();
-
-        return view('tampilmahasiswa',['mahasiswa'=>$mahasiswa]);
+        $mahasiswa = MahasiswaModel::latest()->get();
+        return view('tampilmahasiswa', ['mahasiswa' => $mahasiswa]);
     }
     
-    public function tambahmahasiswa()
+    public function create()
     {
         return view('tambahmahasiswa');
     }
 
-    public function simpanmahasiswa(Request $request)
+    public function store(Request $request)
     {
-        $santri = MahasiswaModel::create([
-            'nm_mahasiswa' => $request->nm_mahasiswa,
-            'tmp_lahir' => $request->tmp_lahir,
-            'tgl_lahir' => $request->tgl_lahir,
-            'alamat' => $request->alamat,
-            'no_hp' => $request->no_hp,
+        $validated = $request->validate([
+            'nm_mahasiswa' => 'required|string|max:255',
+            'tmp_lahir' => 'required|string|max:255',
+            'tgl_lahir' => 'required|date',
+            'alamat' => 'required|string',
+            'no_hp' => 'required|string|max:15',
         ]);
 
-        return redirect()->route('tampilmahasiswa');
+        MahasiswaModel::create($validated);
+
+        session()->flash('success', 'Data mahasiswa berhasil ditambahkan!');
+        return redirect()->route('mahasiswa.index');
     }
 
-    public function ubahmahasiswa($id_mahasiswa)
+    public function edit($id_mahasiswa)
     {
-        $mahasiswa = MahasiswaModel::select('*')
-        ->where('id_mahasiswa', $id_mahasiswa)
-        ->get();
-
+        $mahasiswa = MahasiswaModel::findOrFail($id_mahasiswa);
         return view('ubahmahasiswa', ['mahasiswa' => $mahasiswa]);
     }
 
-    public function updatemahasiswa(Request $request)
+    public function update(Request $request)
     {
-        $mahasiswa = MahasiswaModel::where('id_mahasiswa', 
-        $request->id_mahasiswa)
-        ->update([
-        'nm_mahasiswa' => $request->nm_mahasiswa,
-        'tmp_lahir' => $request->tmp_lahir,
-        'tgl_lahir' => $request->tgl_lahir,
-        'alamat' => $request->alamat,
-        'no_hp' => $request->no_hp,
+        $validated = $request->validate([
+            'id_mahasiswa' => 'required|exists:mahasiswa,id_mahasiswa',
+            'nm_mahasiswa' => 'required|string|max:255',
+            'tmp_lahir' => 'required|string|max:255',
+            'tgl_lahir' => 'required|date',
+            'alamat' => 'required|string',
+            'no_hp' => 'required|string|max:15',
         ]);
 
-        return redirect()->route('tampilmahasiswa');
+        $mahasiswa = MahasiswaModel::findOrFail($request->id_mahasiswa);
+        $mahasiswa->update($validated);
+
+        session()->flash('success', 'Data mahasiswa berhasil diperbarui!');
+        return redirect()->route('mahasiswa.index');
     }
 
-    public function hapusmahasiswa($id_mahasiswa)
+    public function destroy($id_mahasiswa)
     {
-        $mahasiswa = MahasiswaModel::where('id_mahasiswa', 
-        $id_mahasiswa)->delete();
+        $mahasiswa = MahasiswaModel::findOrFail($id_mahasiswa);
+        $mahasiswa->delete();
 
-        return redirect()->route('tampilmahasiswa');
+        session()->flash('success', 'Data mahasiswa berhasil dihapus!');
+        return redirect()->route('mahasiswa.index');
     }
-
 }
