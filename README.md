@@ -1,66 +1,62 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# ANIMA - Aplikasi Nilai Mahasiswa
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Project Tugas Kuliah: Praktek Web Pemrograman Lanjutan
 
-## About Laravel
+ANIMA adalah aplikasi web sederhana yang dibangun menggunakan Framework Laravel sebagai bahan pembelajaran dan tugas praktikum. Project ini dirancang untuk mendemonstrasikan penerapan konsep dasar pengembangan web modern, khususnya fitur CRUD (Create, Read, Update, Delete) dan manajemen data mahasiswa.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Tujuan dari repository ini adalah sebagai referensi belajar bagi sesama mahasiswa atau siapa saja yang sedang mendalami Laravel. Kami harap kode sumber dan dokumentasi ini dapat memberikan manfaat nyata dan membantu Anda memahami bagaimana sebuah aplikasi web dibangun dari nol.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Apa yang Bisa Dipelajari?
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Dari source code ini, Anda dapat mempelajari:
+1.  Konsep MVC (Model-View-Controller): Bagaimana memisahkan logika aplikasi, data, dan tampilan.
+2.  CRUD Operations: Cara membuat, membaca, mengedit, dan menghapus data dari database.
+3.  Authentication: Sistem login dan register pengguna.
+4.  Blade Templating: Cara membuat tampilan web yang dinamis dan reusable.
+5.  Database Migrations: Cara mengelola struktur database menggunakan kode.
 
-## Learning Laravel
+## Dokumentasi Belajar
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Untuk membantu proses belajar, kami telah menyiapakan panduan tambahan di folder /docs:
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+-   Struktur Folder & MVC (docs/STRUCTURE.md): Penjelasan tentang struktur folder Laravel dan file-file penting di project ini.
+-   Panduan Alur CRUD (docs/CRUD_GUIDE.md): Penjelasan langkah-demi-langkah bagaimana data mengalir dari Database ke Tampilan.
+-   Tips Belajar Lanjutan (docs/LEARNING_PATH.md): Rekomendasi apa yang harus dipelajari selanjutnya setelah menguasai project ini.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Fitur Aplikasi
 
-## Laravel Sponsors
+-   Dashboard Ringkas: Statistik sederhana data mahasiswa.
+-   Manajemen Mahasiswa: Form tambah, edit, dan hapus data.
+-   Laporan: Export data ke CSV dan fitur cetak laporan.
+-   Manajemen Akun: Update profil dan ganti password.
+-   Desain UI Modern: Tampilan bersih dan rapi.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Instalasi (Cara Menjalankan)
 
-### Premium Partners
+Ikuti langkah ini untuk menjalankan aplikasi di komputer Anda:
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+1.  Clone Repository
+    git clone https://github.com/tarakreasi/anima.git
+    cd anima
 
-## Contributing
+2.  Install Library Pendukung
+    composer install
+    npm install
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+3.  Setting Database
+    -   Copy file .env.example lalu ubah namanya menjadi .env.
+    -   Buka file .env dan atur koneksi database (DB_DATABASE, DB_USERNAME, dll).
+    -   Generate key aplikasi:
+        php artisan key:generate
 
-## Code of Conduct
+4.  Siapkan Database & Data Dummy
+    php artisan migrate --seed
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+5.  Jalankan Aplikasi
+    npm run dev
+    php artisan serve
 
-## Security Vulnerabilities
+    Buka browser dan akses halaman localhost sesuai port yang tertera.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+Dibuat untuk berbagi ilmu dan referensi belajar bersama.
