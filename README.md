@@ -31,6 +31,18 @@ Untuk membantu proses belajar, kami telah menyiapakan panduan tambahan di folder
 -   Manajemen Akun: Update profil dan ganti password.
 -   Desain UI Modern: Tampilan bersih dan rapi.
 
+## Tampilan Aplikasi
+
+Berikut adalah cuplikan tampilan aplikasi ANIMA:
+
+### Dashboard Utama
+Halaman awal yang menampilkan statistik ringkas data mahasiswa.
+![Dashboard](docs/screenshots/dashboard.png)
+
+### Daftar Mahasiswa
+Halaman untuk melihat, mencari, dan mengelola data mahasiswa.
+![Daftar Mahasiswa](docs/screenshots/mahasiswa.png)
+
 ## Instalasi (Cara Menjalankan)
 
 Ikuti langkah ini untuk menjalankan aplikasi di komputer Anda:
